@@ -72,7 +72,7 @@ jobs:
       - name: Check PR title for keyphrase
         id: check-pr-title
         continue-on-error: true
-        uses: skills/action-keyphrase-checker@v1
+        uses: skills/action-keyphrase-checker@v2
         with:
           keyphrase: "Add my first file"
           text: ${{ github.event.pull_request.title }}
